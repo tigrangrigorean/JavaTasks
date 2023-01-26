@@ -98,13 +98,14 @@ public class DataTypes {
 		System.out.println(gg);
 		
 		// 18
-		long max = 3123456789l;
-		double ddd = 1000.00;
-		char iii = 'i'; char jjj='j'; char ij = (char) (iii+jjj);
+	/*	long max = 3123456789l;
+		double d = 1000.00;
+		char i = 'i'; char j='j'; char ij = (char) (i+j);
 		int a7 = 8;
-		long hh = 8;
-		int nnn, mmm = 11; m = n;
+		long h = 8;
+		int n, m = 11; n = m;
 		
+		*/
 	}
 
 }
