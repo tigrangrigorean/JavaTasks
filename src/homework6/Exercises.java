@@ -4,14 +4,14 @@ import java.util.Random;
 
 public class Exercises {
 	
-	boolean firstMethod(Integer big, Integer small, Integer goal) {
+	boolean firstMethod(Integer x, Integer y, Integer z) {
 		
 		boolean result = false;
-		if (big * 5 >= goal) {
-		    if (small >= goal % 5)
+		if (x * 5 >= z) {
+		    if (y >= z % 5)
 		        result = true;
 		} else {
-		    if (small >= goal - big * 5) {
+		    if (y >= z - x * 5) {
 		        result = true;
 		    }
 		}
