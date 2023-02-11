@@ -43,12 +43,16 @@ public class Algorithmic {
 	
 	void thirdMethod(int num) {
 		
-		String s = Integer.toString(num);
-		StringBuilder sb = new StringBuilder(s);
-		s = sb.reverse().toString();
-		num = Integer.parseInt(s);
-		System.out.println(num);
-		
+		int rNum = 0;
+		while( num != 0 )
+	      {
+			rNum = rNum * 10;
+			rNum = rNum + num%10;
+	          num = num/10;
+	      }
+
+	      System.out.println("Reverse of input number is: "+Rnum);
+	        
 		
 	}
 	
@@ -281,13 +285,42 @@ public class Algorithmic {
 
 	}
 	
+	void sixteenthMethod(int x) {
+		
+		 double y;
+	        y = x*Math.PI/180;
+	        int n = 10;
+	        int i,j,fac;
+	        double sine = 0;
+	        for(i=0; i<=n; i++){
+	            fac = 1;
+	            for(j=2; j<=2*i+1; j++){
+	                fac*=j;
+	            }
+	            sine+=Math.pow(-1.0,i)*Math.pow(y,2*i+1)/fac;
+	        }
+	        System.out.format("The sine of " + x + " is %f",sine);
+	}
+	
+	void seventeenthMethod(double x, int n) {
+	    x = x * (Math.PI / 180.0);
+	    double result = 1;
+	    double s = 1, fact = 1, pow = 1;
+	    for (int i = 1; i < 5; i++) {
+	        s = s * -1;
+	        fact = fact * (2 * i - 1) * (2 * i);
+	        pow = pow * x * x;
+	        result = result + s * pow / fact;
+	    }
+	    System.out.println(result);
+	}
 	
 	public static void main(String[] args) {
 		Algorithmic ex = new Algorithmic();
 		
 		//ex.firstMethod();
 		//ex.secondMethod();
-		//ex.thirdMethod(12345);s
+		//ex.thirdMethod(12345);
 		//ex.fourthMethod();
 		//ex.fifthMethod();
 		//ex.sixthMethod();
@@ -300,6 +333,9 @@ public class Algorithmic {
 		//ex.thirteenthMethod();
 		//ex.fourteenthMethod();
 		//ex.fifteenthMethod();
+		//ex.sixteenthMethod(1);
+		//ex.seventeenthMethod(1,1);
+	
 	}
 
 }
