@@ -92,10 +92,10 @@ public class ArrayUtil {
 			}
 			else if (i == 3){
 				
-				c = arr[1];
+				c = arr[i-2];
 			}
 			else {
-				c = arr[0];
+				c = arr[i-2];
 			}
 			
 			
@@ -109,12 +109,109 @@ public class ArrayUtil {
 		System.out.println(Arrays.toString(arr));
 	}
 	
+	void tenthMethod() {
+		int[] arr = new int[] {6,4,1,5,9,7,2};
+		
+		 for (int i = 0; i < arr.length - 1; i++) {
+	            for (int j = arr.length - 1; j > i; j--) {
+	                if (arr[j - 1] > arr[j] && arr[i] % 2 != 0) {
+	                    int tmp = arr[j - 1];
+	                    arr[j - 1] = arr[j];
+	                    arr[j] = tmp;
+	                }
+	            }
+	        }
+		 System.out.println(Arrays.toString(arr));
+		
+	}
+	
+	void eleventhMethod() {
+		Integer[] arr = new Integer[] {1,0,6,4,9,0,0};
+		
+		int n = 0;
+		for (int i = 0; i < arr.length; i++) {
+		    if (arr[i] != 0)
+		        n++;
+		}
+
+		int[] newArr = new int[n];
+		int j=0;
+
+		for (int i = 0; i < arr.length; i++) {
+		    if (arr[i] != 0)
+		       { 
+		         newArr[j]=arr[i]; 
+		         j++;
+		       }
+		}
+		System.out.println(Arrays.toString(newArr));
+		
+	}
+	
+	void twelvethMethod() {
+		int[] arr = new int[] {1,5,6,4,9,0,4,7,7,9, 1};
+	
+	}
+	
+	void fourteenthMethod() {
+		int arr[][] = {{1, 2, 3, 4},
+	            {5, 6, 7, 8},
+	            {1, 2, 3, 4},
+	            {5, 6, 7, 8}};
+
+	    for (int i = 0; i < arr.length - 1; i++) {
+	        for (int j = i + 1; j < arr.length; j++) {
+
+	            System.out.print(arr[i][j] + " ");
+
+	        }
+	    }
+	}
+	
+	void fifteenthMethod() {
+		int arr1[][] = {{1, 2, 3, 4},
+	            {5, 6, 7, 8},
+	            {1, 2, 3, 4},
+	            {5, 6, 7, 8}};
+	    int arr2[][] = new int[arr1.length][arr1.length];
+	    for (int i = 0; i < arr1.length; i++) {
+	        for (int j = 0; j < arr1.length; j++) {
+
+	            System.out.print(arr2[i][j] = arr1[j][i]);
+	        }
+	    }
+	}
+	
+	void sixteenthMethod() {
+		 int arr[][] = {{1, 2, 3, 5},
+		            {5, 6, 7, 8},
+		            {1, 2, 3, 4},
+		            {5, 6, 7, 8}};
+		    int summ = 0;
+		    boolean a = false;
+		    for (int i = 0; i < arr.length; i++) {
+		        for (int j = 0; j < arr.length; j++) {
+		            summ += arr[i][j];
+
+		            }
+		        if (summ % 2 == 0) {
+		            a = true;
+		        } else {
+		            a = false;
+		            break;
+		        }
+		    }
+		    if (a) {
+		        System.out.println("yes");
+		    } else System.out.println("no");
+	}
+	
 	
 	
 	public static void main(String[] args) {
 		
 		ArrayUtil arrayUtil = new ArrayUtil();
-
+		
 		//arrayUtil.firstMethod();
 		//arrayUtil.secondMethod();
 		//arrayUtil.thirdMethod();
@@ -124,6 +221,12 @@ public class ArrayUtil {
 		//arrayUtil.seventhMethod();
 		//arrayUtil.eighthMethod();
 		//arrayUtil.ninethMethod();
+		//arrayUtil.tenthMethod();
+		//arrayUtil.eleventhMethod();
+		//arrayUtil.twelvethMethod();
+		//arrayUtil.fourteenthMethod();
+		//arrayUtil.fifteenthMethod();
+		//arrayUtil.sixteenthMethod();
 	}
 
 }

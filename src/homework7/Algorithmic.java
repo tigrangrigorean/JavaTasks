@@ -51,7 +51,7 @@ public class Algorithmic {
 	          num = num/10;
 	      }
 
-	      System.out.println("Reverse of input number is: "+Rnum);
+	      System.out.println("Reverse of input number is: "+rNum);
 	        
 		
 	}
