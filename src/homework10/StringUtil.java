@@ -8,6 +8,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print str
 	 */
 	
 	void firstMethod(String str) {
@@ -37,6 +38,7 @@ public class StringUtil {
 	 * 
 	 * @param str
 	 * @param token
+	 * @print count
 	 */
 	void secondMethod(String str,String token) {
 		
@@ -67,6 +69,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str1
+	 * @return true or false
 	 */
 	boolean palindrom(String str1) {
 		StringBuilder stringBuilder = new StringBuilder(str1);
@@ -84,6 +87,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param arr
+	 * @print arr[i]
 	 */
 	void fourthMethod(String [] arr) {
 		
@@ -99,7 +103,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param num
-	 * 
+	 * @print str
 	 */
 	void fifthMethod(int ... num) {
 		String str = "";
@@ -117,6 +121,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param text
+	 * @print str
 	 */
 	void sixthMethod(String text) {
 		
@@ -145,6 +150,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print str.charAt(i)
 	 */
 	
 	void seventhMethod(String str) {
@@ -166,6 +172,7 @@ public class StringUtil {
 	 * 
 	 * @param str1
 	 * @param str2
+	 * @print count
 	 */
 	void eighthMethod(String str1,String str2) {
 		int j=0;

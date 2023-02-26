@@ -2,6 +2,9 @@ package homework12.second_exercise;
 
 public class Triangle extends Shape{
 
+	/**
+	 * @print
+	 */
 	@Override
 	public void draw() {
 		
@@ -9,6 +12,9 @@ public class Triangle extends Shape{
 		
 	}
 
+	/**
+	 * @print
+	 */
 	@Override
 	public void erase() {
 		

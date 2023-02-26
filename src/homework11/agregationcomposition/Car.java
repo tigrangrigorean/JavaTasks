@@ -8,5 +8,7 @@ package homework11.agregationcomposition;
 
 public class Car {
 	
+	private Engine engine;
+	private Driver driver;
 
 }

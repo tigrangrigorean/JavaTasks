@@ -1,4 +1,3 @@
-
 package homework12.third_exercise;
 
 

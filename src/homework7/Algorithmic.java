@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class Algorithmic {
 
+	/**
+	 * @print number * i
+	 */
 	void firstMethod() {
 		
 		int number;
@@ -20,6 +23,9 @@ public class Algorithmic {
 		}while(number<0);
 	}
 	
+	/**
+	 * @print num
+	 */
 	void secondMethod() {
 		
       Scanner sc = new Scanner(System.in);
@@ -41,6 +47,10 @@ public class Algorithmic {
 		
 	}
 	
+	/**
+	 * @param num
+	 */
+	
 	void thirdMethod(int num) {
 		
 		int rNum = 0;
@@ -55,6 +65,10 @@ public class Algorithmic {
 	        
 		
 	}
+	
+	/**
+	 * @print num is prime or not
+	 */
 	
 	void fourthMethod() {
 		System.out.println("Enter the positive number");
@@ -74,6 +88,10 @@ public class Algorithmic {
 		    else
 		      System.out.println(num + " is not a prime number.");
 	}
+	
+	/**
+	 *  @print sum
+	 */
 	
 	void fifthMethod() {
 		
@@ -97,7 +115,10 @@ public class Algorithmic {
 			
 		}while(a == 'y');
 	}
-	
+	/**
+	 * Num is positive, negative or zero
+	 * @print quantity
+	 */
 	void sixthMethod() {
 		Scanner sc = new Scanner(System.in);
 		
@@ -131,6 +152,10 @@ public class Algorithmic {
 		
 	}
 	
+	/**
+	 * @print largest & smallest values
+	 */
+	
 	void seventhMethod() {
 	Scanner sc = new Scanner(System.in);
 		
@@ -163,6 +188,10 @@ public class Algorithmic {
 		System.out.println("Largest number = : " + smallest);
 	}
 	
+	/**
+	 * @print i
+	 */
+	
 	void eighthMethod() {
 		
 		 int n, count = 0, a, b, c, sum = 0;
@@ -184,6 +213,9 @@ public class Algorithmic {
 	        }
 	}
 	
+	/**
+	 * @print sum
+	 */
 	void ninethMethod() {
 		Scanner sc = new Scanner(System.in);
 		
@@ -198,6 +230,9 @@ public class Algorithmic {
 		
 	}
 	
+	/**
+	 * @print number is small or large
+	 */
 	void eleventhMethod() {
 		Random rand = new Random();
 		int randsub = rand.nextInt(1,10);
@@ -220,6 +255,10 @@ public class Algorithmic {
 		}
 	}
 	
+	/**
+	 * print square
+	 * @print *
+	 */
 	void twelvethMethod() {
 		for(int i = 0; i<=5; i++) {
 			for(int j = 0; j<=5; j++) {
@@ -228,6 +267,10 @@ public class Algorithmic {
 			System.out.println("*");
 		}
 	}
+	
+	/**
+	 * @print *
+	 */
 	
 	void thirteenthMethod() {
 		
@@ -256,6 +299,9 @@ public class Algorithmic {
 	        } 
 	}
 	
+	/**
+	 * @print symbol
+	 */
 	void fifteenthMethod() {
 	    
 		int firstNum = 5;
@@ -285,6 +331,11 @@ public class Algorithmic {
 
 	}
 	
+	/**
+	 * 
+	 * @param x
+	 * @print sine
+	 */
 	void sixteenthMethod(int x) {
 		
 		 double y;
@@ -301,6 +352,13 @@ public class Algorithmic {
 	        }
 	        System.out.format("The sine of " + x + " is %f",sine);
 	}
+	
+	/**
+	 * 
+	 * @param x
+	 * @param n
+	 * @print result
+	 */
 	
 	void seventeenthMethod(double x, int n) {
 	    x = x * (Math.PI / 180.0);

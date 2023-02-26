@@ -5,6 +5,6 @@ package homework11.agregationcomposition;
  * Aggregation Example
  *
  */
-public class Employee extends Bank{
+public class Employee{
 
 }

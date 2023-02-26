@@ -4,6 +4,14 @@ import java.util.Random;
 
 public class Exercises {
 	
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @param z
+	 * @return result - true or false
+	 */
+	
 	boolean firstMethod(Integer x, Integer y, Integer z) {
 		
 		boolean result = false;
@@ -18,7 +26,11 @@ public class Exercises {
 		return result;
 	}
 	
-	
+	/**
+	 * 
+	 * @param number
+	 * @return i
+	 */
 	int secondMethod(int number) {
 	
 		int i;
@@ -32,7 +44,9 @@ public class Exercises {
 }
 		
 	
-	
+	/**
+	 * @print Num odd or even
+	 */
 	void thirdMethod() {
 		double num = Math.random() * 100;
 		int sub = (int) num;
@@ -45,7 +59,9 @@ public class Exercises {
 		}
 		
 	}
-	
+	/**
+	 * @print smallest & largest number
+	 */
 	void fourthMethod() {
 		
 		int smallest = 100;

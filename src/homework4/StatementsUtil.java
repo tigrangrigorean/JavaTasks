@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class StatementsUtil {
 	
 	// 1
+	/**
+	 * 
+	 * @param x
+	 * @print X
+	 */
 	void firstMethod(int x) {
 		if(x % 2 == 0 && x != 0) {
 			System.out.println("X is couple");
@@ -18,6 +23,11 @@ public class StatementsUtil {
 	}
 	
 	// 2
+	/**
+	 * 
+	 * @param x
+	 * @print X
+	 */
 	void secondMethod(int x) {
 		if(x <0) {
 			System.out.println("x < 0");
@@ -31,6 +41,11 @@ public class StatementsUtil {
 	}
 	
 	// 3
+	/**
+	 * 
+	 * @param x
+	 * @print true or false
+	 */
 	void thirdMethod(int x) {
 		if((x < 8 & x > 5) | (x < 20 & x>15)) {
 			System.out.println(true);
@@ -41,6 +56,11 @@ public class StatementsUtil {
 	}
 	
 	// 4
+	/**
+	 * 
+	 * @param x
+	 * @print true or false
+	 */
 	void forthMethod(int x) {
 		if(x%5 == 0 && x%7 == 0) {
 			System.out.println(true);
@@ -50,6 +70,11 @@ public class StatementsUtil {
 		}
 	}
 	// 5
+	/**
+	 * 
+	 * @param x
+	 * @print true or false
+	 */
 	void fifthMethod(int x) {
 		if(x >= 100 && x <=999) {
 			int b = (x / 10)%10;
@@ -65,6 +90,12 @@ public class StatementsUtil {
 		}
 	}
 	// 6
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @print true or false
+	 */
 	void sixthMethod(int x, int y) {
 		
 		if(x < 5 & y < 5) {
@@ -76,6 +107,13 @@ public class StatementsUtil {
 	}
 	
 	// 7
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @param z
+	 * @print print x or y or z value
+	 */
 	void seventhMethod(int x , int y , int z) {
 		
 		if(x > y && x > z) {
@@ -90,6 +128,11 @@ public class StatementsUtil {
 	}
 	
 	// 8
+	/**
+	 * Is year leap or not
+	 * @param year
+	 * @print true or false
+	 */
 	void eighthMethod(int year) {
 		if((year % 4 == 0 && year%100 != 0 )|| year%400 == 0) {
 			System.out.println(true);
@@ -98,6 +141,8 @@ public class StatementsUtil {
 			System.out.println(false);
 		}
 	}
+	
+	// Fix exercise
 	
 // 10)	 int x = 0;
 //     while (x++ < 10) {
@@ -125,6 +170,9 @@ public class StatementsUtil {
 	
 	
 	// 11
+	/**
+	 * @print i
+	 */
 	void ninthMethod() {
 		
 		for(int i = 1; i<=200; i++) {
@@ -134,6 +182,11 @@ public class StatementsUtil {
 	}
 
 	// 12
+	/**
+	 * 
+	 * @param num
+	 * @print b
+	 */
 	
 	void tenthMethod(int num) {
 		
@@ -143,7 +196,9 @@ public class StatementsUtil {
 	}
 	
 	// 13
-	
+	/**
+	 * @print x + y
+	 */
 	void eleventhMethod() {
 		int x = 1;
 		int y = 0;
@@ -159,6 +214,10 @@ public class StatementsUtil {
 	}
 	
 	// 14
+	/**
+	 * print square
+	 * @print *
+	 */
 	void fourteenthMethod() {
 		
 		for(int i = 1; i<5; i++) {
@@ -171,6 +230,9 @@ public class StatementsUtil {
 	}
 	
 	// 15
+	/**
+	 * @print sum
+	 */
 	void fifteenthMethod() {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
@@ -185,6 +247,11 @@ public class StatementsUtil {
 	}
 	
 	// 16
+	/**
+	 * 
+	 * @param n
+	 * @print sum
+	 */
 	void sixteenthMethod(long n) {
 		
 		long sum = 1l;
@@ -200,6 +267,11 @@ public class StatementsUtil {
 	}
 	
 	// 17
+	/**
+	 * 
+	 * @param n
+	 * @print b
+	 */
 	void seventeenthMethod(int n) {
 		
 		double b = (1 + n) / 2;
@@ -209,7 +281,11 @@ public class StatementsUtil {
 	}
 	
 	// 18
-	
+	/**
+	 * 
+	 * @param n
+	 * @print a + b + c + d + e
+	 */
 	void eighteenthMethod(int n) {
 		
 		if(n>=10000 && n <=99999) {

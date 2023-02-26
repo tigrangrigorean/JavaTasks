@@ -6,5 +6,6 @@ package homework11.agregationcomposition;
  *
  */
 public class House {
-
+	private Door door;
+	private Inhabitant inhabitant;
 }

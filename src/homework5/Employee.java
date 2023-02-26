@@ -8,15 +8,25 @@ public class Employee {
 	int age;
 	String gender;
 	
-	
+	/**
+	 * @param id
+	 * @param name
+	 * @param department
+	 * @param age
+	 * @param gender
+	 */
 	public Employee(int id, String name, String department, int age, String gender) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.department = department;
 		this.age = age;
 		this.gender = gender;
 	}
-	
+
+	/**
+	 * @print id, name , age , gender
+	 */
 	void printEmployee() {
 		System.out.println(id + " " + name + " " + age + " " + gender);
 	}

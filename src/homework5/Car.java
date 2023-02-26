@@ -7,15 +7,28 @@ public class Car {
 	boolean isEngineStart;
 	
 	
+	/**
+	 * @param model
+	 * @param color
+	 * @param currentSpeed
+	 */
 	public Car(String model, String color, int currentSpeed) {
+		super();
 		this.model = model;
 		this.color = color;
 		this.currentSpeed = currentSpeed;
+		
 	}
 	
+	/**
+	 * isEngine false
+	 */
 	void stopEngine() {
 		isEngineStart = false;
 	}
+	/**
+	 * isEngine true
+	 */
 	void startEngine() {
 		isEngineStart = true;
 	}

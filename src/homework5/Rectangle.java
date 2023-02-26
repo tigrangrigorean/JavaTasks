@@ -5,7 +5,10 @@ public class Rectangle {
 	private int length = 5;
 	private int width = 14;
 
-	
+	/**
+	 * 
+	 * @return length * width
+	 */
 	int calculateArea() {
 		return length * width;
 	}

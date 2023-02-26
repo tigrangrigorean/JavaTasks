@@ -5,7 +5,8 @@ public class Truck extends Car{
 	private int capacity;
 	
 	/**
-	 * 
+	 * setEngineType
+	 * setPassangerCount
 	 */
 	
 	public Truck() {

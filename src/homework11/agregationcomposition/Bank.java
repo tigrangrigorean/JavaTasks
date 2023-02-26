@@ -6,5 +6,7 @@ package homework11.agregationcomposition;
  *
  */
 public class Bank {
+	private Money money;
+	private Employee employee;
 
 }

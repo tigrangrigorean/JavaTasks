@@ -8,7 +8,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * This method concats String
-	 * 
+	 * @print stringBuilder
 	 */
 	void firstMethod() {
 		String a = "Hello";
@@ -105,6 +105,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print str
 	 */
 	void fifthMethod(String str) {
 		str = str.toUpperCase();
@@ -112,7 +113,9 @@ public class StringUtil {
 	}
 	
 	
-
+	/**
+	 * @print str
+	 */
 	void sixthMethod() {
 		Scanner sc = new Scanner(System.in);
 		
@@ -134,6 +137,8 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print str
+	 * @print stringBuilder
 	 */
 	
 	void seventhMethod(String str) {
@@ -157,6 +162,8 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print str
+	 * @print stringBuilder
 	 */
 	
 	void eighthMethod(String str) {
@@ -183,6 +190,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print arr[index]
 	 */
 	
 	void ninethMethod(String str) {
@@ -201,6 +209,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print index
 	 */
 	void tenthMethod(String str) {
 		String[] arr = str.split("");
@@ -218,6 +227,7 @@ public class StringUtil {
 	 * 
 	 * @param str
 	 * @param n
+	 * @print arr[i]
 	 */
 	
 	void eleventhMethod(String str,int n) {
@@ -235,7 +245,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
-	 * @return
+	 * @return true or false
 	 */
 	boolean twelfthMethod(String str) {
 		
@@ -251,6 +261,7 @@ public class StringUtil {
 	/**
 	 * 
 	 * @param str
+	 * @print arr[index]
 	 */
 	void thirteenthMethod(String str) {
 		
