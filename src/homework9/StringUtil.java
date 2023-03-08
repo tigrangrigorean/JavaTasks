@@ -10,7 +10,7 @@ public class StringUtil {
 	 * This method concats String
 	 * @print stringBuilder
 	 */
-	void firstMethod() {
+	void stringConcatsMethod() {
 		String a = "Hello";
 		String b = "World";
 		int c = 1;
@@ -32,12 +32,12 @@ public class StringUtil {
 	
 	
 	/**
-	 * 
+	 * This methods return the new line after every space
 	 * @param str
 	 * @return array of words
 	 */
 	
-	String secondMethod(String str) {
+	String lineSplitNewLines(String str) {
 		
 		String arr[] = str.split(" ");
 		
@@ -50,12 +50,12 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * This Method reverseString
 	 * @param str
 	 * @return String type
 	 */
 	
-	String thirdMethod(String str) {
+	String reverseString(String str) {
 		
 		
 		String[] arr = str.split("");
@@ -71,13 +71,13 @@ public class StringUtil {
 
 	
 	/**
-	 * 
+	 * This method counts SubStrings
 	 * @param str
 	 * @param token
 	 * @return int Count
 	 */
 	
-	int fourthMethod(String str, String token) {
+	int countSubString(String str, String token) {
 		
 	int count = 0;
 	int j = 0;
@@ -103,20 +103,23 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * This method changes str to UpperCase
 	 * @param str
 	 * @print str
 	 */
-	void fifthMethod(String str) {
+	void upperCase(String str) {
 		str = str.toUpperCase();
 		System.out.println(str);
 	}
 	
 	
 	/**
+	 * Method that reads a 20-character string from the console and prints it if the string
+     * length is less than 20, then we must silence the line by writing less characters instead
+     * The "*" symbol
 	 * @print str
 	 */
-	void sixthMethod() {
+	void method() {
 		Scanner sc = new Scanner(System.in);
 		
 		String str = sc.nextLine();
@@ -135,13 +138,13 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * This method remove the Character
 	 * @param str
 	 * @print str
 	 * @print stringBuilder
 	 */
 	
-	void seventhMethod(String str) {
+	void removeCharacter(String str) {
 		String[] arr = str.split("a");
 		StringBuilder stringBuilder = new StringBuilder(str);
 		str = "";
@@ -160,13 +163,13 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * This method replaceCharacter
 	 * @param str
 	 * @print str
 	 * @print stringBuilder
 	 */
 	
-	void eighthMethod(String str) {
+	void replaceCharacter(String str) {
 		String[] arr = str.split("a");
 		StringBuilder stringBuilder = new StringBuilder(str);
 		str = "";
@@ -189,11 +192,12 @@ public class StringUtil {
 	
 	/**
 	 * 
+	 * This method find the longest substring of str
 	 * @param str
 	 * @print arr[index]
 	 */
 	
-	void ninethMethod(String str) {
+	void longestSubString(String str) {
 		String[] arr = str.split(" ");
 		int len = 0;
 		int index = 0;
@@ -207,11 +211,11 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * This method return the index of Character
 	 * @param str
 	 * @print index
 	 */
-	void tenthMethod(String str) {
+	void indexOfChar(String str) {
 		String[] arr = str.split("");
 		int index = 0;
 		for(int i = 0; i<arr.length; i++) {
@@ -224,13 +228,14 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * Write a method, which finds and prints the given line from the beginning to the index
+ 	 * substring using String.
 	 * @param str
 	 * @param n
 	 * @print arr[i]
 	 */
 	
-	void eleventhMethod(String str,int n) {
+	void toIndexBreak(String str,int n) {
 		String[] arr = str.split("");
 		
 		
@@ -243,11 +248,11 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 *String null which checks if the given parameter is empty and not
 	 * @param str
 	 * @return true or false
 	 */
-	boolean twelfthMethod(String str) {
+	boolean nullOrNot(String str) {
 		
 		if(!str.isEmpty() && str != null) {
 			return true;
@@ -259,11 +264,11 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * This method return the largest SubString Index
 	 * @param str
 	 * @print arr[index]
 	 */
-	void thirteenthMethod(String str) {
+	void largestSubString(String str) {
 		
 		String[] arr = str.split(",");
 		int len = 0;
@@ -276,25 +281,6 @@ public class StringUtil {
 		}
 		System.out.println(arr[index]);
 		
-	}
-	
-	public static void main(String[] args) {
-
-		StringUtil stringUtil = new StringUtil();
-		
-		stringUtil.firstMethod();	
-		System.out.println(stringUtil.secondMethod("Hi my friend"));
-		System.out.println(stringUtil.thirdMethod("Hi my friend"));
-		System.out.println(stringUtil.fourthMethod("We are living in an yellow submarine. We don't  have anything", "in"));
-		stringUtil.fifthMethod("hello");
-		stringUtil.sixthMethod();
-		stringUtil.seventhMethod("We are living in an yellow submarine. We don't  have anything");
-		stringUtil.eighthMethod("We are living in an yellow submarine. We don't  have anything");
-		stringUtil.ninethMethod("We are living in an yellow submarine. We don't  have anything");
-		stringUtil.tenthMethod("We are living in an yellow submarine. We don't  have anything");
-		stringUtil.eleventhMethod("We are living in an yellow submarine. We don't  have anything", 10);
-		System.out.println(stringUtil.twelfthMethod(""));
-		stringUtil.thirteenthMethod("We, are, living, in an, yellow, submarine, We don't,  have anything");
 	}
 
 }

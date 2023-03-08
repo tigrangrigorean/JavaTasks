@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class StatementsUtil {
 	
-	// 1
+	
 	/**
 	 * 
 	 * @param x
 	 * @print X
 	 */
-	void firstMethod(int x) {
+	void coupleOrOdd(int x) {
 		if(x % 2 == 0 && x != 0) {
 			System.out.println("X is couple");
 		}
@@ -22,13 +22,13 @@ public class StatementsUtil {
 		}
 	}
 	
-	// 2
+	
 	/**
 	 * 
 	 * @param x
 	 * @print X
 	 */
-	void secondMethod(int x) {
+	void numIsPositiveNegative(int x) {
 		if(x <0) {
 			System.out.println("x < 0");
 		}
@@ -40,13 +40,13 @@ public class StatementsUtil {
 		}
 	}
 	
-	// 3
+	
 	/**
 	 * 
 	 * @param x
 	 * @print true or false
 	 */
-	void thirdMethod(int x) {
+	void compareNum(int x) {
 		if((x < 8 & x > 5) | (x < 20 & x>15)) {
 			System.out.println(true);
 		}
@@ -55,13 +55,13 @@ public class StatementsUtil {
 		}
 	}
 	
-	// 4
+	
 	/**
 	 * 
 	 * @param x
 	 * @print true or false
 	 */
-	void forthMethod(int x) {
+	void isMultiple(int x) {
 		if(x%5 == 0 && x%7 == 0) {
 			System.out.println(true);
 		}
@@ -69,13 +69,13 @@ public class StatementsUtil {
 			System.out.println(false);
 		}
 	}
-	// 5
+	
 	/**
 	 * 
 	 * @param x
 	 * @print true or false
 	 */
-	void fifthMethod(int x) {
+	void IsDigitNum(int x) {
 		if(x >= 100 && x <=999) {
 			int b = (x / 10)%10;
 			if(b == 7) {
@@ -96,7 +96,7 @@ public class StatementsUtil {
 	 * @param y
 	 * @print true or false
 	 */
-	void sixthMethod(int x, int y) {
+	void isPointBelong(int x, int y) {
 		
 		if(x < 5 & y < 5) {
 			System.out.println(true);
@@ -106,7 +106,7 @@ public class StatementsUtil {
 		}
 	}
 	
-	// 7
+	
 	/**
 	 * 
 	 * @param x
@@ -114,7 +114,7 @@ public class StatementsUtil {
 	 * @param z
 	 * @print print x or y or z value
 	 */
-	void seventhMethod(int x , int y , int z) {
+	void maxValue(int x , int y , int z) {
 		
 		if(x > y && x > z) {
 			System.out.println(x);
@@ -127,13 +127,13 @@ public class StatementsUtil {
 		}
 	}
 	
-	// 8
+	
 	/**
 	 * Is year leap or not
 	 * @param year
 	 * @print true or false
 	 */
-	void eighthMethod(int year) {
+	void isYearLeap(int year) {
 		if((year % 4 == 0 && year%100 != 0 )|| year%400 == 0) {
 			System.out.println(true);
 		}
@@ -169,11 +169,11 @@ public class StatementsUtil {
 //	
 	
 	
-	// 11
+
 	/**
 	 * @print i
 	 */
-	void ninthMethod() {
+	void printNums() {
 		
 		for(int i = 1; i<=200; i++) {
 			System.out.println(i);
@@ -181,25 +181,24 @@ public class StatementsUtil {
 		
 	}
 
-	// 12
 	/**
 	 * 
 	 * @param num
 	 * @print b
 	 */
 	
-	void tenthMethod(int num) {
+	void firstDigit(int num) {
 		
 		String a = Integer.toString(num);
 		char b = a.charAt(0);
 		System.out.println(b);
 	}
 	
-	// 13
+	
 	/**
 	 * @print x + y
 	 */
-	void eleventhMethod() {
+	void printXY() {
 		int x = 1;
 		int y = 0;
 		
@@ -213,12 +212,12 @@ public class StatementsUtil {
 		
 	}
 	
-	// 14
+	
 	/**
 	 * print square
 	 * @print *
 	 */
-	void fourteenthMethod() {
+	void printSquare() {
 		
 		for(int i = 1; i<5; i++) {
 			for(int j = 1; j<7; j++) {
@@ -229,11 +228,11 @@ public class StatementsUtil {
 		
 	}
 	
-	// 15
+	
 	/**
 	 * @print sum
 	 */
-	void fifteenthMethod() {
+	void sumMultiples() {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int sum = 0;
@@ -246,13 +245,12 @@ public class StatementsUtil {
 		System.out.println(sum);
 	}
 	
-	// 16
 	/**
 	 * 
 	 * @param n
 	 * @print sum
 	 */
-	void sixteenthMethod(long n) {
+	void sumOfValues(long n) {
 		
 		long sum = 1l;
 		
@@ -266,13 +264,13 @@ public class StatementsUtil {
 		System.out.println(sum);
 	}
 	
-	// 17
+	
 	/**
 	 * 
 	 * @param n
 	 * @print b
 	 */
-	void seventeenthMethod(int n) {
+	void method(int n) {
 		
 		double b = (1 + n) / 2;
 		
@@ -286,7 +284,7 @@ public class StatementsUtil {
 	 * @param n
 	 * @print a + b + c + d + e
 	 */
-	void eighteenthMethod(int n) {
+	void digitsFiveNumberSum(int n) {
 		
 		if(n>=10000 && n <=99999) {
 			
@@ -300,31 +298,6 @@ public class StatementsUtil {
 			
 			
 		}
-		
-	}
-	
-	public static void main(String[] args) {
-		
-		StatementsUtil statementsUtil = new StatementsUtil();
-		
-		statementsUtil.firstMethod(2);
-		statementsUtil.secondMethod(12);
-		statementsUtil.thirdMethod(15);
-		statementsUtil.forthMethod(35);
-		statementsUtil.fifthMethod(575);
-		statementsUtil.sixthMethod(3, 4);
-		statementsUtil.seventhMethod(22, 34, 12);
-		statementsUtil.eighthMethod(1992);
-		statementsUtil.ninthMethod();
-		statementsUtil.tenthMethod(323);
-		statementsUtil.eleventhMethod();
-		statementsUtil.fourteenthMethod();
-		statementsUtil.fifteenthMethod();
-		statementsUtil.sixteenthMethod(31);
-		statementsUtil.seventeenthMethod(7);
-		statementsUtil.eighteenthMethod(42351);
-		
-	
 		
 	}
 

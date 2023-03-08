@@ -8,7 +8,7 @@ public class Algorithmic {
 	/**
 	 * @print number * i
 	 */
-	void firstMethod() {
+	void multiplicationTable() {
 		
 		int number;
 		
@@ -26,7 +26,7 @@ public class Algorithmic {
 	/**
 	 * @print num
 	 */
-	void secondMethod() {
+	void powOrNot() {
 		
       Scanner sc = new Scanner(System.in);
       int firstNum = sc.nextInt();
@@ -49,9 +49,10 @@ public class Algorithmic {
 	
 	/**
 	 * @param num
+	 * @print rNum
 	 */
 	
-	void thirdMethod(int num) {
+	void reverseNumber(int num) {
 		
 		int rNum = 0;
 		while( num != 0 )
@@ -70,7 +71,7 @@ public class Algorithmic {
 	 * @print num is prime or not
 	 */
 	
-	void fourthMethod() {
+	void isPrime() {
 		System.out.println("Enter the positive number");
 		Scanner sc = new Scanner(System.in);
 		
@@ -93,7 +94,7 @@ public class Algorithmic {
 	 *  @print sum
 	 */
 	
-	void fifthMethod() {
+	void sumOfEnteredNums() {
 		
 		char a = 0;
 		int xy = 0;
@@ -119,7 +120,7 @@ public class Algorithmic {
 	 * Num is positive, negative or zero
 	 * @print quantity
 	 */
-	void sixthMethod() {
+	void quantityNum() {
 		Scanner sc = new Scanner(System.in);
 		
 		int positive = 0;
@@ -156,7 +157,7 @@ public class Algorithmic {
 	 * @print largest & smallest values
 	 */
 	
-	void seventhMethod() {
+	void largestOrSmallestValue() {
 	Scanner sc = new Scanner(System.in);
 		
 		
@@ -192,7 +193,7 @@ public class Algorithmic {
 	 * @print i
 	 */
 	
-	void eighthMethod() {
+	void armstrongNumbers() {
 		
 		 int n, count = 0, a, b, c, sum = 0;
 		 
@@ -216,7 +217,7 @@ public class Algorithmic {
 	/**
 	 * @print sum
 	 */
-	void ninethMethod() {
+	void calculateSeries() {
 		Scanner sc = new Scanner(System.in);
 		
 		int sum = 0;
@@ -233,7 +234,7 @@ public class Algorithmic {
 	/**
 	 * @print number is small or large
 	 */
-	void eleventhMethod() {
+	void numIsSmallOrLarge() {
 		Random rand = new Random();
 		int randsub = rand.nextInt(1,10);
 		boolean flag = false;
@@ -259,7 +260,7 @@ public class Algorithmic {
 	 * print square
 	 * @print *
 	 */
-	void twelvethMethod() {
+	void printSquare() {
 		for(int i = 0; i<=5; i++) {
 			for(int j = 0; j<=5; j++) {
 				System.out.print("*");
@@ -272,7 +273,7 @@ public class Algorithmic {
 	 * @print *
 	 */
 	
-	void thirteenthMethod() {
+	void print() {
 		
 		for (int i = 1; i <= 5; i++) {
             for (int a = 0; a < i; a++) {
@@ -283,7 +284,11 @@ public class Algorithmic {
 		
 	}
 	
-	void fourteenthMethod() {
+	/**
+	 * @print num triangle
+	 */
+	
+	void numsTriangle() {
 		   
 		    
 	        for(int i=0; i<5; i++) 
@@ -302,7 +307,7 @@ public class Algorithmic {
 	/**
 	 * @print symbol
 	 */
-	void fifteenthMethod() {
+	void printNums() {
 	    
 		int firstNum = 5;
         int sum = 2;
@@ -336,7 +341,7 @@ public class Algorithmic {
 	 * @param x
 	 * @print sine
 	 */
-	void sixteenthMethod(int x) {
+	void calculateSin(int x) {
 		
 		 double y;
 	        y = x*Math.PI/180;
@@ -360,7 +365,7 @@ public class Algorithmic {
 	 * @print result
 	 */
 	
-	void seventeenthMethod(double x, int n) {
+	void calculateCos(double x, int n) {
 	    x = x * (Math.PI / 180.0);
 	    double result = 1;
 	    double s = 1, fact = 1, pow = 1;
@@ -371,29 +376,6 @@ public class Algorithmic {
 	        result = result + s * pow / fact;
 	    }
 	    System.out.println(result);
-	}
-	
-	public static void main(String[] args) {
-		Algorithmic ex = new Algorithmic();
-		
-		//ex.firstMethod();
-		//ex.secondMethod();
-		//ex.thirdMethod(12345);
-		//ex.fourthMethod();
-		//ex.fifthMethod();
-		//ex.sixthMethod();
-		//ex.seventhMethod();
-		//ex.eighthMethod();
-		//ex.ninethMethod();
-		//ex.tenthMethod();
-		//ex.eleventhMethod();
-		//ex.twelvethMethod();
-		//ex.thirteenthMethod();
-		//ex.fourteenthMethod();
-		//ex.fifteenthMethod();
-		//ex.sixteenthMethod(1);
-		//ex.seventeenthMethod(1,1);
-	
 	}
 
 }

@@ -6,10 +6,10 @@ import java.util.Collections;
 public class ArrayUtil {
 	
 	/**
-	 * @print arr[i]
+	 * @print positive members of array
 	 */
 	
-	void firstMethod() {
+	void positiveMebersOfArray() {
 		int[] arr = new int[] {1,4,2,-3};
 		
 		for(int i = 0; i<arr.length;i++) {
@@ -20,9 +20,9 @@ public class ArrayUtil {
 	}
 	
 	/**
-	 * @print arr[i]
+	 * @print arr[i] in reverse order
 	 */
-	void secondMethod() {
+	void reverseOrderPrint() {
 		short[] arr = new short[] {1,2,3};
 		
 		for(int i = arr.length-1; i>=0; i--) {
@@ -31,28 +31,29 @@ public class ArrayUtil {
 	}
 	
 	/**
-	 * @print arr[arr.length-1]
+	 * @print the largest member of Array
 	 */
-	void thirdMethod() {
+	void largestMember() {
 		long[] arr = new long[] {1l,2l,12l,4l};
 		Arrays.sort(arr);
 		System.out.println(arr[arr.length-1]);
 	}
 	
 	/**
-	 * print arrays min value
+	 * @print arrays min value
 	 * @print arr[0]
 	 */
-	void fourthMethod() {
+	void minValuePrint() {
 		float[] arr = new float[] {1.7f,2.1f,0.5f,3.4f};
 		Arrays.sort(arr);
 		System.out.println(arr[0]);
 	}
 	
 	/**
+	 * array m gets reference n
 	 * @print array m
 	 */
-	void fifthMethod() {
+	void referenceArrays() {
 		int[] n = new int[] {1,3,5,7,9};
 		int[] m = n;
 		
@@ -63,7 +64,7 @@ public class ArrayUtil {
 	 * print sum of two arrays
 	 * @print thirdArr
 	 */
-	void sixthMethod() {
+	void sumOfTwoArrays() {
 		int[] firstArr = new int[] {1,2,3,4 };
 		int[] secondArr = new int[] {4,3,2,1};
 		int[] thirdArr = new int[4];
@@ -75,9 +76,10 @@ public class ArrayUtil {
 	}
 	
 	/**
+	 * @Print how much K meets in array
 	 * @print count
 	 */
-	void seventhMethod() {
+	void meetsInArray() {
 		int count = 0;
 		
 		int[] arr = new int[] {5,4,2,5,5,7,3};
@@ -92,10 +94,11 @@ public class ArrayUtil {
 	}
 	
 	/**
-	 * @print a, b , c
+	 * @print all non-repeating triplets in Array
+	 * @print a, b, c
 	 */
 	
-	void eighthMethod() {
+	void nonRepeatingTriplets() {
 		
 		int a,b,c;
 		
@@ -132,18 +135,20 @@ public class ArrayUtil {
 	}
 	
 	/**
+	 * @print reverse Array values
 	 * @print arr
 	 */
-	void ninethMethod() {
+	void reverseArrayValues() {
 		Integer[] arr = new Integer[] {6,4,1,5,9,7,1};
 		Arrays.sort(arr, Collections.reverseOrder());
 		System.out.println(Arrays.toString(arr));
 	}
 	
 	/**
+	 * This method sort array, in the end odd numbers
 	 * @print arr
 	 */
-	void tenthMethod() {
+	void sortArrayOdd() {
 		int[] arr = new int[] {6,4,1,5,9,7,2};
 		
 		 for (int i = 0; i < arr.length - 1; i++) {
@@ -160,9 +165,10 @@ public class ArrayUtil {
 	}
 	
 	/**
+	 * @print This Method remove's zeros
 	 * @print newArr
 	 */
-	void eleventhMethod() {
+	void removeZeros() {
 		Integer[] arr = new Integer[] {1,0,6,4,9,0,0};
 		
 		int n = 0;
@@ -185,15 +191,12 @@ public class ArrayUtil {
 		
 	}
 	
-	void twelvethMethod() {
-		int[] arr = new int[] {1,5,6,4,9,0,4,7,7,9, 1};
-	
-	}
 	
 	/**
+	 * This method print all the years above the main diagonal of the given matrix.
 	 * @print arr[i][j]
 	 */
-	void fourteenthMethod() {
+	void printAllAboveTheMainDiagonal() {
 		int arr[][] = {{1, 2, 3, 4},
 	            {5, 6, 7, 8},
 	            {1, 2, 3, 4},
@@ -209,9 +212,11 @@ public class ArrayUtil {
 	}
 	
 	/**
+	 * This method to Invert the square matrix of the given integers on the main diagonal.
+	 * towards.
 	 * @print arr2[i][j]
 	 */
-	void fifteenthMethod() {
+	void invertTheSquareMatrix() {
 		int arr1[][] = {{1, 2, 3, 4},
 	            {5, 6, 7, 8},
 	            {1, 2, 3, 4},
@@ -226,9 +231,11 @@ public class ArrayUtil {
 	}
 	
 	/**
+	 * This method for the given square matrix of natural numbers, outputs YES if its .
+	 * the sum of the elements of all rows is even. NO otherwise.
 	 * @print yes or no
 	 */
-	void sixteenthMethod() {
+	void printsYesOrNo() {
 		 int arr[][] = {{1, 2, 3, 5},
 		            {5, 6, 7, 8},
 		            {1, 2, 3, 4},
@@ -252,27 +259,5 @@ public class ArrayUtil {
 		    } else System.out.println("no");
 	}
 	
-	
-	
-	public static void main(String[] args) {
-		
-		ArrayUtil arrayUtil = new ArrayUtil();
-		
-		//arrayUtil.firstMethod();
-		//arrayUtil.secondMethod();
-		//arrayUtil.thirdMethod();
-		//arrayUtil.fourthMethod();
-		//arrayUtil.fifthMethod();
-		//arrayUtil.sixthMethod();
-		//arrayUtil.seventhMethod();
-		//arrayUtil.eighthMethod();
-		//arrayUtil.ninethMethod();
-		//arrayUtil.tenthMethod();
-		//arrayUtil.eleventhMethod();
-		//arrayUtil.twelvethMethod();
-		//arrayUtil.fourteenthMethod();
-		//arrayUtil.fifteenthMethod();
-		//arrayUtil.sixteenthMethod();
-	}
 
 }

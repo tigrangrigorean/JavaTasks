@@ -6,12 +6,14 @@ public class StringUtil {
 
 	
 	/**
-	 * 
+	 * Given a string, return a string made of the first 2 chars (if present), however 
+	 * include first char only if it is 'o' and include the second only if it is 'z', so 
+	 * "ozymandias" yields "oz".
 	 * @param str
 	 * @print str
 	 */
 	
-	void firstMethod(String str) {
+	void searchCharacters(String str) {
 		String[] arr = str.split("");
 		str = "";
 		int i = 0;
@@ -35,12 +37,15 @@ public class StringUtil {
 	}
 	
 	/**
+	 *
+	 * Count the number of "xx" in the given string. We'll say that overlapping is 
+	 * allowed, so "xxx" contains 2 "xx".
 	 * 
 	 * @param str
 	 * @param token
 	 * @print count
 	 */
-	void secondMethod(String str,String token) {
+	void containsOrNot(String str,String token) {
 		
 		int count = 0;
 		int j = 0;
@@ -67,7 +72,7 @@ public class StringUtil {
 			
 	
 	/**
-	 * 
+	 * This method detect's String is palindrome or not
 	 * @param str1
 	 * @return true or false
 	 */
@@ -85,13 +90,12 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * Given a list of strings, write a method that returns a list of all strings that 
+	 * start with the letter 'a' (lower case) and have exactly 3 letters.
 	 * @param arr
 	 * @print arr[i]
 	 */
-	void fourthMethod(String [] arr) {
-		
-		
+	void containsCharacterA(String [] arr) {
 		
 		for(int i = 0; i<arr.length; i++) {
 			if(arr[i].charAt(0) == 'a') {
@@ -101,11 +105,13 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * Write a method that returns a comma-separated string based on a given list 
+	 * of integers. Each element should be preceded by the letter 'e' if the number 
+	 * is even, and preceded by the letter 'o' if the number is odd.
 	 * @param num
 	 * @print str
 	 */
-	void fifthMethod(int ... num) {
+	void printSymbolAndLetter(int ... num) {
 		String str = "";
 		for(int i = 0; i<num.length;i++) {
 			if(num[i]%2 == 0) {
@@ -119,11 +125,11 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * This method to realize the Caesar's cipher
 	 * @param text
 	 * @print str
 	 */
-	void sixthMethod(String text) {
+	void caesarsCipher(String text) {
 		
 		final String alphabet = "abcdefghijklmnopqrstuvwxyz";
 		
@@ -148,12 +154,14 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * A palindrome is a word which reads the same backward or forward. 'abcba' is 
+	 * a palindrome. Write a method that returns the longest palindrome substring 
+	 * of a given string
 	 * @param str
 	 * @print str.charAt(i)
 	 */
 	
-	void seventhMethod(String str) {
+	void palindromeSubString(String str) {
 		int startIndex = 0;
 		int count = 0;
 		String [] arr = str.split("");
@@ -169,12 +177,12 @@ public class StringUtil {
 	}
 	
 	/**
-	 * 
+	 * Given two strings, find the number of common characters between them.
 	 * @param str1
 	 * @param str2
 	 * @print count
 	 */
-	void eighthMethod(String str1,String str2) {
+	void commonCharacters(String str1,String str2) {
 		int j=0;
 		int count = 0;
 		for(int i = 0; i<str1.length(); i++) {
@@ -189,22 +197,5 @@ public class StringUtil {
 		
 	}
 	
-	
-	
-
-	
-	public static void main(String[] args) {
-		
-		StringUtil stringUtil = new StringUtil();
-		
-		stringUtil.firstMethod("ozymandia");
-		stringUtil.secondMethod("asinin","in");
-		System.out.println(stringUtil.palindrom("abcdcba"));
-		stringUtil.fourthMethod(new String[] {"aHello", "abello", "bHello"});
-		stringUtil.fifthMethod(55,44,33,22);
-		stringUtil.sixthMethod("mjqqt");
-		stringUtil.seventhMethod("abcddcba");
-		stringUtil.eighthMethod("Helo","eslo");
-	}
 
 }

@@ -12,7 +12,7 @@ public class Exercises {
 	 * @return result - true or false
 	 */
 	
-	boolean firstMethod(Integer x, Integer y, Integer z) {
+	boolean riceBagsMethod(Integer x, Integer y, Integer z) {
 		
 		boolean result = false;
 		if (x * 5 >= z) {
@@ -31,7 +31,7 @@ public class Exercises {
 	 * @param number
 	 * @return i
 	 */
-	int secondMethod(int number) {
+	int primeFactors(int number) {
 	
 		int i;
 		for ( i = 2; i <= number; i++) {
@@ -47,7 +47,7 @@ public class Exercises {
 	/**
 	 * @print Num odd or even
 	 */
-	void thirdMethod() {
+	void evenOrOddNum() {
 		double num = Math.random() * 100;
 		int sub = (int) num;
 		
@@ -62,7 +62,7 @@ public class Exercises {
 	/**
 	 * @print smallest & largest number
 	 */
-	void fourthMethod() {
+	void smallestAndLargestRandom() {
 		
 		int smallest = 100;
 		int largest = 0;
@@ -78,15 +78,6 @@ public class Exercises {
 		}
 		System.out.println("the smallest num: " + smallest);
 		System.out.println("the largest num: " + largest);
-	}
-
-	public static void main(String[] args) {
-		
-		Exercises ex = new Exercises();
-		System.out.println(ex.firstMethod(2, 3, 13));
-		System.out.println(ex.secondMethod(455));
-		ex.thirdMethod();
-		ex.fourthMethod();
 	}
 
 }
